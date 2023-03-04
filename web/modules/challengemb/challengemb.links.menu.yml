@@ -3,4 +3,10 @@ challengemb.config:
   route_name: challengemb.config
   description: 'Config challengemb'
   parent: system.admin_config_system
-  weight: 99
+  weight: 21
+
+challengemb.display:
+  title: Data display chanllengemb
+  parent: system.admin_config_system
+  route_name: challengemb.display
+  weight: 22

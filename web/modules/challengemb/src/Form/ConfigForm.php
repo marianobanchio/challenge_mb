@@ -48,6 +48,14 @@ class ConfigForm extends ConfigFormBase {
     return parent::buildForm($form, $form_state);
   }
 
+  public function validateForm(array &$form, FormStateInterface $form_state) {
+    parent::validateForm($form, $form_state);
+
+    if (!ctype_digit($form_state->getValue('number'))) {
+      $form_state->setErrorByName('number', $this->t('El número debe ser entero.'));
+    }
+  }
+
   /**
    * {@inheritdoc}
    */

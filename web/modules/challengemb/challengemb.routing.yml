@@ -6,7 +6,7 @@ challengemb.config:
   requirements:
     _permission: 'administer site configuration'
 
-balidea.example:
+challengemb.display:
   path: '/challengemb/show-data'
   defaults:
     _title: 'Example'

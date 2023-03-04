@@ -6,3 +6,4 @@ type: module
 dependencies:
   - drupal:locale
   - config_translation
+  - translated_config
