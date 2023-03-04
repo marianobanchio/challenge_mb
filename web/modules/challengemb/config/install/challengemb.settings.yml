@@ -1,0 +1,4 @@
+langcode: en
+text:
+  value: 'Default config text'
+  format: full_html

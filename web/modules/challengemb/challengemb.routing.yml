@@ -1,0 +1,15 @@
+challengemb.config:
+  path: '/admin/config/challengemb/settings'
+  defaults:
+    _form: '\Drupal\challengemb\Form\ConfigForm'
+    _title: 'Configuration challenge mb module'
+  requirements:
+    _permission: 'administer site configuration'
+
+balidea.example:
+  path: '/challengemb/show-data'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\challengemb\Controller\ChallengembController::build'
+  requirements:
+    _role: 'authenticated'

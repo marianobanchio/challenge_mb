@@ -1,0 +1,5 @@
+challengemb.config:
+  title: 'Configuration'
+  base_route_name: challengemb.config
+  names:
+    - 'challengemb.settings'

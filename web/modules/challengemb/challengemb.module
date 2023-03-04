@@ -1,0 +1,16 @@
+<?php
+function challengemb_theme($existing, $type, $theme, $path) {
+
+    return [
+      // Name of the theme hook. This is used in the controller to trigger the hook.
+      'challengemb' => [
+        'render element' => 'children',
+        'template' => 'challengemb',
+        'variables' => [
+          'text' => 'Yet another default text.',
+          'number' => 0
+        ],
+      ],
+    ];
+  
+  }

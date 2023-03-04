@@ -1,0 +1,8 @@
+name: Challeng MB
+description: Contains MB challenge code
+package: Custom
+core_version_requirement: ^9 || ^10
+type: module
+dependencies:
+  - drupal:locale
+  - config_translation

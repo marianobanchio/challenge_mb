@@ -1,0 +1,4 @@
+challengemb.settings_tab:
+  route_name: challengemb.config
+  title: Settings
+  base_route: challengemb.config

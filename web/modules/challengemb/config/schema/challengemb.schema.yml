@@ -1,0 +1,8 @@
+challengemb.settings:
+  type: config_object
+  label: 'Configuration'
+  translatable: true
+  mapping:
+    text:
+      label: 'My config text'
+      type: text_format
