@@ -19,3 +19,8 @@ function challengemb_preprocess_html(&$variables) {
     $variables['attributes']['class'][] = 'mb-node-type-' . str_replace('_', '-', $node->bundle());
   }
 }
+
+function challengemb_preprocess_page(&$variables)
+{
+  $variables['#attached']['drupalSettings']['challengemb']['sitename'] =  \Drupal::config('system.site')->get('name');
+}
