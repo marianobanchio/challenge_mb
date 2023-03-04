@@ -1,6 +1,5 @@
 <?php
 function challengemb_theme($existing, $type, $theme, $path) {
-
     return [
       // Name of the theme hook. This is used in the controller to trigger the hook.
       'challengemb' => [
@@ -12,5 +11,11 @@ function challengemb_theme($existing, $type, $theme, $path) {
         ],
       ],
     ];
-  
   }
+
+function challengemb_preprocess_html(&$variables) {
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if ($node instanceof \Drupal\node\NodeInterface) {
+    $variables['attributes']['class'][] = 'mb-node-type-' . str_replace('_', '-', $node->bundle());
+  }
+}
